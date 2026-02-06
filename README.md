@@ -1,4 +1,4 @@
-# Excel/VBA – Word PDF Generator (Demo)
+# Excel/VBA – Creador de PDFs (Demo)
 
 Macro en Excel + VBA que genera un PDF por correo usando una plantilla Word. Reemplaza campos de texto (campaña y fecha) e inserta una tabla con VINs asociados a cada correo.
 
@@ -24,21 +24,19 @@ Cuando se necesita generar comunicaciones individuales por cliente (correo) con 
    - Exporta a PDF
 
 ## Estructura del repositorio
-- src/ contiene el módulo VBA exportado (.bas)
-- data/ contiene archivos de entrada demo (datos ficticios)
-- template/ contiene la plantilla Word demo (sin logos ni datos reales)
-- output/ contiene ejemplos de PDFs generados
-- docs/ incluye capturas del input/output (recomendado)
+- src/ contiene el módulo VBA exportado (.bas) y contiene la plantilla Word demo
+- data/ contiene archivos de entrada ficticios
+- output/ incluye capturas del input/output y contiene ejemplos de PDFs generados
 
 ## Uso
 1. Abrir los archivos de entrada en data/
-2. Importar src/GenerarPDFsPorCorreo_DesdePlantilla.bas en el Editor VBA (Alt + F11)
-3. Ejecutar la macro GenerarPDFsPorCorreo_DesdePlantilla
+2. Importar src/GenerarPDFsPorCorreo.bas en el Editor VBA (Alt + F11)
+3. Ejecutar la macro GenerarPDFsPorCorreo
 4. Seguir los cuadros de diálogo (base, lista, campaña, fecha, plantilla Word, carpeta destino)
 
 ## Salida
 Se genera un PDF por correo en la carpeta seleccionada, con nombre:
-cantidadVINs_localPart.pdf
+cantidadVINs_correo.pdf
 
 Ejemplo:
 130_cliente01.pdf
